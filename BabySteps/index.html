@@ -4,15 +4,17 @@
 </head>
 <body>
 <div>
-	Hi this is my first prog in Sublime..
+	Basic Router concepts in Ember
 </div>
-<div>
-	<script type="text/x-handlebars" data-template-name="application">
-		{{outlet}}
-	</script>
+<div>	
 	<script type="text/x-handlebars" data-template-name="index">
-		<h1>{{firstProp}}</h1>
-		<h3>{{secondProp}}</h3>
+		<ul>
+		{{#each item in roommates}}
+		 <li>
+		   {{item}}
+		 </li>
+		 {{/each}}
+		</ul>
 	</script>
 </div>
 
